@@ -1,0 +1,50 @@
+.row {
+	
+	font-size: 0;
+	margin: 20px 0;
+	box-sizing: border-box;
+
+}
+
+.row .column {
+	display:inline-block;
+	padding: 20px;
+	font-size: 1rem;
+	margin-right: 2%;
+	box-sizing: border-box;
+	transition: all 0.5s;
+	vertical-align: top;
+}
+
+.row .column:last-child {
+	margin-right: 0;
+}
+.one {
+	width: 100%;
+}
+
+.oneHalf {
+	width: 49%;
+}
+.oneThird {
+	width: 32%;
+}
+
+.oneFourth {
+	width: 23.5%;
+}
+
+.oneFifth {
+	width: 18.4%;
+}
+
+.oneSixth {
+	width: 15%;
+}
+
+@media screen and (max-width: 400px) {
+	.column {
+		margin: 20px 0;
+		width: 100%;
+	}
+}
