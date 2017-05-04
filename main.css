@@ -10,12 +10,33 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     height: 400px;	
 }
 
-#animal-selector label {
-	display: inline-block;
-	padding: 20px;
+input {
+	display: none;
+}
+
+#animal-selector input:checked + label {
 	background: red;
 }
 
+#animal-selector label {
+	position: relative;
+	display: inline-block;
+	margin: 0 2% 0 0;
+	background: #4e9fbe;
+	width: 50px;
+	height: 50px;
+}
+
+#animal-selector label i {
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	padding: 10px;
+	border-radius: 50%;
+	background: #30e42c;
+	color: #fff;
+}
+
 #animal-selector label:hover {
-	background-color: green;
+	background-color: #d3e7fa;
 }
