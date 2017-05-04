@@ -6,8 +6,77 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 #slider {
-	
-    height: 400px;	
+	position: relative;
+	margin: 0 0 50px 0;
+	line-height: 500px;
+	overflow: hidden;
+    height: 500px;
+  
+}
+
+#slider ul li {
+	background: #fed300;
+	height: 500px;
+}
+
+#slider ul li {
+	background: url("img/1.jpg");
+	background-size: cover;
+}
+
+#slider ul li.second {
+	background: url("img/2.jpg");
+	background-size: cover;
+}
+
+#slider ul li.third {
+	background: url("img/3.jpg");
+	background-size: cover;
+}
+
+#slider ul li.fourth {
+	background: url("img/4.jpg");
+	background-size: cover;
+}
+
+#slider .arrow {
+	position: absolute;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	font-size: 2rem;
+	right: 200px;
+	line-height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+#slides {
+	position: relative;
+}
+
+#slider #up {
+	top: 50px;
+	z-index: 1;
+}
+
+#slider #down {
+	bottom: 50px;
+	z-index: 1;
+}
+
+#slider .header-text {
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 2rem;
+	background: #000;
+	color: #fff;
+}
+
+#animal-selector {
+	text-align: center;
 }
 
 input {
@@ -28,6 +97,7 @@ input {
 }
 
 #animal-selector label i {
+	display: none;
 	position: absolute;
 	right: -10px;
 	top: -10px;
@@ -37,6 +107,31 @@ input {
 	color: #fff;
 }
 
+#animal-selector input:checked + label i {
+	display: block;
+	-webkit-animation: zoomIn 0.2s;
+}
+
+/*footer*/
+#master-footer {
+	padding: 50px;
+	text-align: center;
+	color: #fff;
+	background: #555;
+}
+
 #animal-selector label:hover {
 	background-color: #d3e7fa;
 }
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
